@@ -1,0 +1,139 @@
+{
+  "nodes": {
+    "atom": {
+      "locked": {
+        "lastModified": 1739021695,
+        "narHash": "sha256-gwBjsWpFnp12xKniusY1MefrRPJD2GLkGTTWXM7YY1Y=",
+        "owner": "LiGoldragon",
+        "repo": "atom",
+        "rev": "c5feff453339eb0706cb42f726ccd4dfeba118e6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "LiGoldragon",
+        "repo": "atom",
+        "type": "github"
+      }
+    },
+    "atom_2": {
+      "locked": {
+        "lastModified": 1739021695,
+        "narHash": "sha256-gwBjsWpFnp12xKniusY1MefrRPJD2GLkGTTWXM7YY1Y=",
+        "owner": "LiGoldragon",
+        "repo": "atom",
+        "rev": "c5feff453339eb0706cb42f726ccd4dfeba118e6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "LiGoldragon",
+        "repo": "atom",
+        "type": "github"
+      }
+    },
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": [
+          "pkdjz",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1738453229,
+        "narHash": "sha256-7H9XgNiGLKN1G1CgRh0vUL4AheZSYzPm+zmZ7vxbJdo=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "32ea77a06711b758da0ad9bd6a844c5740a87abd",
+        "type": "github"
+      },
+      "original": {
+        "id": "flake-parts",
+        "type": "indirect"
+      }
+    },
+    "liGoldragonWebpage": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1680518207,
+        "narHash": "sha256-d+dFhHDQJbOtsTSVzDQBfOlmmOahEGkgXaT7CKhAbyk=",
+        "owner": "LiGoldragon",
+        "repo": "webpage",
+        "rev": "64aea9d79e0d72ad780c4d0e3bd2d21f43d1ef8d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "LiGoldragon",
+        "repo": "webpage",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1734649271,
+        "narHash": "sha256-4EVBRhOjMDuGtMaofAIqzJbg4Ql7Ai0PSeuVZTHjyKQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "d70bd19e0a38ad4790d3913bf08fcbfc9eeca507",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-atom": {
+      "inputs": {
+        "atom": "atom_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1738846350,
+        "narHash": "sha256-aapkFqNYESXOPNo2ppURvZEV9AKmh4v46CHRNpqzMyc=",
+        "owner": "criome",
+        "repo": "nixpkgs-atom",
+        "rev": "7fde0d218d82b7754109b44e7bfe60cd472c9b2b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "criome",
+        "repo": "nixpkgs-atom",
+        "type": "github"
+      }
+    },
+    "pkdjz": {
+      "inputs": {
+        "flake-parts": "flake-parts",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1681097063,
+        "narHash": "sha256-SI9yrUe5tjdHBsaSUq4rTEnRRQJ1OKOnIRerqm0jMF8=",
+        "owner": "criome",
+        "repo": "pkdjz",
+        "rev": "c05317459e87a924196d0b32b28537cd8e2d8ea3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "criome",
+        "repo": "pkdjz",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "atom": "atom",
+        "liGoldragonWebpage": "liGoldragonWebpage",
+        "nixpkgs": "nixpkgs",
+        "nixpkgs-atom": "nixpkgs-atom",
+        "pkdjz": "pkdjz"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

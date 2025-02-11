@@ -1,0 +1,22 @@
+[atom]
+id = "world"
+version = "0.1.0"
+system = true
+propagate = true
+
+[std]
+features = ["lib"]
+
+[fetch.nixpkgs-atom]
+name = "nixpkgs-atom"
+
+[fetch.pkdjz]
+name = "pkdjz"
+type = "flake"
+
+[fetch.liGoldragonWebpage]
+name = "liGoldragonWebpage"
+type = "src"
+
+[backend.nix]
+fetcher = "flake-lock"
