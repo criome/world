@@ -5,7 +5,12 @@ let
     goldragon = use.liGoldragonWebpage;
   };
 
-  mkWebsite = name: src: pkdjz.mkHugoWebsite { inherit src; };
+  mkWebsite =
+    name: src:
+    let
+      domain = name + ".criome.net";
+    in
+    pkdjz.mkMarkdownWebsite { inherit src domain; };
 
   websites = std.mapAttrs mkWebsite websiteSrcs;
 
