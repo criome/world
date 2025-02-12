@@ -9,19 +9,8 @@ let
 
   websites = std.mapAttrs mkWebsite websiteSrcs;
 
-  tests = {
-    simpleYamlRead = pkdjz.fromYAML ''
-      title: Li Goldragon
-      matrixID: "@li:matrix.org"
-      twitterID: LiGoldragon
-      youtubeID: "@ligoldragon"
-      patreonID: LiGoldragon
-    '';
-  };
-
 in
 {
-  Packages.website = websites;
-
-  Packages.test = tests;
+  Packages.websites = websites;
+  Packages.tests = mod.tests;
 }
