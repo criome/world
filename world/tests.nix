@@ -10,4 +10,11 @@ in
     youtubeID: "@ligoldragon"
     patreonID: LiGoldragon
   '';
+
+  complexYamlRead = pkdjz.fromYAML ''
+    title: Li Goldragon
+    params:
+      telegram:
+        siteID: LiGoldragon
+  '';
 }
