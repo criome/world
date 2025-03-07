@@ -7,12 +7,18 @@ propagate = true
 [std]
 features = ["lib"]
 
+[fetch.typed-atom]
+name = "typed-atom"
+
 [fetch.nixpkgs-atom]
 name = "nixpkgs-atom"
 
 [fetch.pkdjz]
 name = "pkdjz"
 type = "flake"
+
+[fetch.horizons]
+name = "horizons"
 
 [fetch.liGoldragonWebpage]
 name = "liGoldragonWebpage"
