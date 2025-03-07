@@ -1,8 +1,8 @@
 let
-  pkdjz = use.pkdjz.packages.${system};
+  pkdjz = get.pkdjz.packages.${system};
 
   websiteSrcs = {
-    goldragon = use.liGoldragonWebpage;
+    goldragon = get.liGoldragonWebpage;
   };
 
   mkWebsite =
@@ -16,6 +16,7 @@ let
 
 in
 {
+  Packages.horizons = get.typed-atom.make get.horizons;
   Packages.websites = websites;
   Packages.tests = mod.tests;
 }

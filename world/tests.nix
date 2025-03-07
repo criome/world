@@ -1,5 +1,5 @@
 let
-  pkdjz = use.pkdjz.packages.${system};
+  pkdjz = get.pkdjz.packages.${system};
 
 in
 {
