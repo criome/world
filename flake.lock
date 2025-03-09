@@ -2,11 +2,11 @@
   "nodes": {
     "atom": {
       "locked": {
-        "lastModified": 1740578955,
-        "narHash": "sha256-cfQd23xSpKB7AIVNjoHRcKwR/h4lJY9Syi6Mu/NWX9Y=",
+        "lastModified": 1741520620,
+        "narHash": "sha256-cec/xa4HNvzW8K5mln2rlGFiYnsBmZfDYgdvyGNCWf4=",
         "owner": "LiGoldragon",
         "repo": "atom",
-        "rev": "e9b437bf60607fdfa27e49937561b9e1f8682863",
+        "rev": "67dd69779d04509710df85af441498c8f0da7200",
         "type": "github"
       },
       "original": {
@@ -91,21 +91,6 @@
       }
     },
     "atom_7": {
-      "locked": {
-        "lastModified": 1740578955,
-        "narHash": "sha256-cfQd23xSpKB7AIVNjoHRcKwR/h4lJY9Syi6Mu/NWX9Y=",
-        "owner": "LiGoldragon",
-        "repo": "atom",
-        "rev": "e9b437bf60607fdfa27e49937561b9e1f8682863",
-        "type": "github"
-      },
-      "original": {
-        "owner": "LiGoldragon",
-        "repo": "atom",
-        "type": "github"
-      }
-    },
-    "atom_8": {
       "locked": {
         "lastModified": 1740578955,
         "narHash": "sha256-cfQd23xSpKB7AIVNjoHRcKwR/h4lJY9Syi6Mu/NWX9Y=",
@@ -250,7 +235,9 @@
     },
     "horizons": {
       "inputs": {
-        "atom": "atom_2",
+        "atom": [
+          "atom"
+        ],
         "src": "src"
       },
       "locked": {
@@ -378,7 +365,7 @@
     },
     "nixpkgs-atom": {
       "inputs": {
-        "atom": "atom_3",
+        "atom": "atom_2",
         "nixpkgs": [
           "nixpkgs"
         ]
@@ -399,7 +386,7 @@
     },
     "nixpkgs-atom_2": {
       "inputs": {
-        "atom": "atom_5",
+        "atom": "atom_4",
         "nixpkgs": [
           "pkdjz",
           "nixpkgs"
@@ -421,7 +408,7 @@
     },
     "nixpkgs-atom_3": {
       "inputs": {
-        "atom": "atom_7",
+        "atom": "atom_6",
         "nixpkgs": [
           "rust-atom",
           "nixpkgs"
@@ -493,7 +480,7 @@
     },
     "pkdjz": {
       "inputs": {
-        "atom": "atom_4",
+        "atom": "atom_3",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -524,12 +511,13 @@
         "nixpkgs-atom": "nixpkgs-atom",
         "pkdjz": "pkdjz",
         "rust-atom": "rust-atom",
+        "system": "system",
         "typed-atom": "typed-atom"
       }
     },
     "rust-atom": {
       "inputs": {
-        "atom": "atom_6",
+        "atom": "atom_5",
         "crane": "crane_3",
         "nixpkgs": "nixpkgs_2",
         "nixpkgs-atom": "nixpkgs-atom_3"
@@ -630,6 +618,21 @@
         "type": "path"
       }
     },
+    "system": {
+      "locked": {
+        "lastModified": 1741520211,
+        "narHash": "sha256-xHifvvYmRbOeUwQfo3D9mTHbh4oBmhg9iNhNGCuK8fk=",
+        "owner": "criome",
+        "repo": "system",
+        "rev": "ddffaa28acbcf95373bd8ed2d142ec9e6f6becbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "criome",
+        "repo": "system",
+        "type": "github"
+      }
+    },
     "systems": {
       "locked": {
         "lastModified": 1681028828,
@@ -684,7 +687,7 @@
     },
     "typed-atom": {
       "inputs": {
-        "atom": "atom_8",
+        "atom": "atom_7",
         "rust-atom": [
           "rust-atom"
         ]

@@ -3,6 +3,7 @@
 
   inputs = {
     atom.url = "github:LiGoldragon/atom";
+    system.url = "github:criome/system";
 
     typed-atom.url = "github:criome/typed-atom";
     typed-atom.inputs.rust-atom.follows = "rust-atom";
