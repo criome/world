@@ -2,15 +2,16 @@
   "nodes": {
     "atom": {
       "locked": {
-        "lastModified": 1741520620,
-        "narHash": "sha256-cec/xa4HNvzW8K5mln2rlGFiYnsBmZfDYgdvyGNCWf4=",
+        "lastModified": 1741525624,
+        "narHash": "sha256-F5HbIUenQo+jOhEF6aw4SVQ3ZSTqTiv3ZDtI6TzK19w=",
         "owner": "LiGoldragon",
         "repo": "atom",
-        "rev": "67dd69779d04509710df85af441498c8f0da7200",
+        "rev": "901017135c6e2e069d9eb61ef6bf3ad4ec8f8dbd",
         "type": "github"
       },
       "original": {
         "owner": "LiGoldragon",
+        "ref": "atomicFlake-v1",
         "repo": "atom",
         "type": "github"
       }

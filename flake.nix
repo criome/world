@@ -2,7 +2,7 @@
   description = "World";
 
   inputs = {
-    atom.url = "github:LiGoldragon/atom";
+    atom.url = "github:LiGoldragon/atom/atomicFlake-v1";
     system.url = "github:criome/system";
 
     typed-atom.url = "github:criome/typed-atom";
