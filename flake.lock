@@ -33,15 +33,16 @@
     },
     "atom_3": {
       "locked": {
-        "lastModified": 1740578955,
-        "narHash": "sha256-cfQd23xSpKB7AIVNjoHRcKwR/h4lJY9Syi6Mu/NWX9Y=",
+        "lastModified": 1741525624,
+        "narHash": "sha256-F5HbIUenQo+jOhEF6aw4SVQ3ZSTqTiv3ZDtI6TzK19w=",
         "owner": "LiGoldragon",
         "repo": "atom",
-        "rev": "e9b437bf60607fdfa27e49937561b9e1f8682863",
+        "rev": "901017135c6e2e069d9eb61ef6bf3ad4ec8f8dbd",
         "type": "github"
       },
       "original": {
         "owner": "LiGoldragon",
+        "ref": "atomicFlake-v1",
         "repo": "atom",
         "type": "github"
       }
@@ -63,15 +64,16 @@
     },
     "atom_5": {
       "locked": {
-        "lastModified": 1740578955,
-        "narHash": "sha256-cfQd23xSpKB7AIVNjoHRcKwR/h4lJY9Syi6Mu/NWX9Y=",
+        "lastModified": 1741525624,
+        "narHash": "sha256-F5HbIUenQo+jOhEF6aw4SVQ3ZSTqTiv3ZDtI6TzK19w=",
         "owner": "LiGoldragon",
         "repo": "atom",
-        "rev": "e9b437bf60607fdfa27e49937561b9e1f8682863",
+        "rev": "901017135c6e2e069d9eb61ef6bf3ad4ec8f8dbd",
         "type": "github"
       },
       "original": {
         "owner": "LiGoldragon",
+        "ref": "atomicFlake-v1",
         "repo": "atom",
         "type": "github"
       }
@@ -153,11 +155,11 @@
     },
     "crane_3": {
       "locked": {
-        "lastModified": 1741148495,
-        "narHash": "sha256-EV8KUaIZ2/CdBXlutXrHoZYbWPeB65p5kKZk71gvDRI=",
+        "lastModified": 1741481578,
+        "narHash": "sha256-JBTSyJFQdO3V8cgcL08VaBUByEU6P5kXbTJN6R0PFQo=",
         "owner": "ipetkov",
         "repo": "crane",
-        "rev": "75390a36cd0c2cdd5f1aafd8a9f827d7107f2e53",
+        "rev": "bb1c9567c43e4434f54e9481eb4b8e8e0d50f0b5",
         "type": "github"
       },
       "original": {
@@ -239,19 +241,37 @@
         "atom": [
           "atom"
         ],
-        "src": "src"
+        "horizons-rs": [
+          "horizons-rs"
+        ]
       },
       "locked": {
-        "lastModified": 1741353893,
-        "narHash": "sha256-DXZtGMedO4zwyD0grIsgHbhZJzU1/zEdyw/XjgDZaGc=",
+        "lastModified": 1741605286,
+        "narHash": "sha256-1hmoeuNRS3SylbvW/TWkDsoO3+w9bRtNlfv3Fs+CsQE=",
         "owner": "criome",
         "repo": "horizons",
-        "rev": "d50ecd8569e5746225e138d6d71d50ddc39bc6ef",
+        "rev": "06a686a68cbb72e0b63d49aabf386115d8eee448",
         "type": "github"
       },
       "original": {
         "owner": "criome",
         "repo": "horizons",
+        "type": "github"
+      }
+    },
+    "horizons-rs": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1741604929,
+        "narHash": "sha256-WCEgolSdLOdYJWKdR63B+ohXrDtkvrgrrQP0pb/m/og=",
+        "owner": "criome",
+        "repo": "horizons-rs",
+        "rev": "c1842a3e932ef3075cc919c6c0bfed69715d28b5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "criome",
+        "repo": "horizons-rs",
         "type": "github"
       }
     },
@@ -487,14 +507,15 @@
         ],
         "nixpkgs-atom": "nixpkgs-atom_2",
         "omnix": "omnix",
+        "system": "system",
         "zed": "zed"
       },
       "locked": {
-        "lastModified": 1741090795,
-        "narHash": "sha256-lvlHIqsO9gOLyKIZ/cyd6wFkcyTl8+yeD8UltxOL0ZE=",
+        "lastModified": 1741525879,
+        "narHash": "sha256-z3ECEBJxUjfHR6e8KGmiFp0z+WUCddLFha4+t8z7RWc=",
         "owner": "criome",
         "repo": "pkdjz",
-        "rev": "04b1e7ccc697ed97d95db5f55efffd845619d053",
+        "rev": "51ff37b2bf78a55e4daae5982b5aa1ecbc94aafb",
         "type": "github"
       },
       "original": {
@@ -507,12 +528,13 @@
       "inputs": {
         "atom": "atom",
         "horizons": "horizons",
+        "horizons-rs": "horizons-rs",
         "liGoldragonWebpage": "liGoldragonWebpage",
         "nixpkgs": "nixpkgs",
         "nixpkgs-atom": "nixpkgs-atom",
         "pkdjz": "pkdjz",
         "rust-atom": "rust-atom",
-        "system": "system",
+        "system": "system_3",
         "typed-atom": "typed-atom"
       }
     },
@@ -521,14 +543,16 @@
         "atom": "atom_5",
         "crane": "crane_3",
         "nixpkgs": "nixpkgs_2",
-        "nixpkgs-atom": "nixpkgs-atom_3"
+        "nixpkgs-atom": "nixpkgs-atom_3",
+        "rust-overlay": "rust-overlay_3",
+        "system": "system_2"
       },
       "locked": {
-        "lastModified": 1741355292,
-        "narHash": "sha256-MNl6zqsmdfm3Rdyi9hQeN+eculER7bWfl+H0VurnxFs=",
+        "lastModified": 1741608041,
+        "narHash": "sha256-DZP4/2q2MLPA6mSoOQv1Li5vLdeBLzczAZndQ5MT36M=",
         "owner": "criome",
         "repo": "rust-atom",
-        "rev": "c175bbd3ff1839b13ec284e110769aafa62c0f87",
+        "rev": "3de62e794f4b6b2597a3f6ef1050711a9a70d24c",
         "type": "github"
       },
       "original": {
@@ -606,20 +630,58 @@
         "type": "github"
       }
     },
-    "src": {
-      "flake": false,
+    "rust-overlay_3": {
+      "inputs": {
+        "nixpkgs": [
+          "rust-atom",
+          "nixpkgs"
+        ]
+      },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-frZtCGobsJ0iiUs8zokV3s3nUbXKshJ4whR4B+CG7Aw=",
-        "path": "/nix/store/2zd7m89rq5fdzna08sxlaaj6rg93kj9g-source/src",
-        "type": "path"
+        "lastModified": 1741573199,
+        "narHash": "sha256-A2sln1GdCf+uZ8yrERSCZUCqZ3JUlOv1WE2VFqqfaLQ=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "c777dc8a1e35407b0e80ec89817fe69970f4e81a",
+        "type": "github"
       },
       "original": {
-        "path": "/nix/store/2zd7m89rq5fdzna08sxlaaj6rg93kj9g-source/src",
-        "type": "path"
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
       }
     },
     "system": {
+      "locked": {
+        "lastModified": 1741519710,
+        "narHash": "sha256-lruoFLEopJlO2DnYNAMYqiV1/XNBcfQDjY31tTloD28=",
+        "owner": "criome",
+        "repo": "system",
+        "rev": "877d4dd32ecf43e9ecc09dc95c2ada988345bf77",
+        "type": "github"
+      },
+      "original": {
+        "owner": "criome",
+        "repo": "system",
+        "type": "github"
+      }
+    },
+    "system_2": {
+      "locked": {
+        "lastModified": 1741520211,
+        "narHash": "sha256-xHifvvYmRbOeUwQfo3D9mTHbh4oBmhg9iNhNGCuK8fk=",
+        "owner": "criome",
+        "repo": "system",
+        "rev": "ddffaa28acbcf95373bd8ed2d142ec9e6f6becbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "criome",
+        "repo": "system",
+        "type": "github"
+      }
+    },
+    "system_3": {
       "locked": {
         "lastModified": 1741520211,
         "narHash": "sha256-xHifvvYmRbOeUwQfo3D9mTHbh4oBmhg9iNhNGCuK8fk=",

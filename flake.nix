@@ -16,8 +16,11 @@
     pkdjz.url = "github:criome/pkdjz";
     pkdjz.inputs.nixpkgs.follows = "nixpkgs";
 
+    horizons-rs.url = "github:criome/horizons-rs";
+    horizons-rs.flake = false;
     horizons.url = "github:criome/horizons";
     horizons.inputs.atom.follows = "atom";
+    horizons.inputs.horizons-rs.follows = "horizons-rs";
 
     liGoldragonWebpage.url = "github:LiGoldragon/webpage";
     liGoldragonWebpage.flake = false;
