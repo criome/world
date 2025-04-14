@@ -2,16 +2,15 @@
   description = "World";
 
   inputs = {
+    make-atom.url = "github:criome/make-atom";
+
     atom.url = "github:LiGoldragon/atom/atomicFlake-v1";
-    system.url = "github:criome/system";
 
     typed-atom.url = "github:criome/typed-atom";
     typed-atom.inputs.rust-atom.follows = "rust-atom";
     rust-atom.url = "github:criome/rust-atom";
 
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs-atom.url = "github:criome/nixpkgs-atom";
-    nixpkgs-atom.inputs.nixpkgs.follows = "nixpkgs";
 
     pkdjz.url = "github:criome/pkdjz";
     pkdjz.inputs.nixpkgs.follows = "nixpkgs";
@@ -26,5 +25,23 @@
     liGoldragonWebpage.flake = false;
   };
 
-  outputs = inputs: inputs.atom.mkAtomicFlake inputs (./. + "/world@.toml");
+  outputs =
+    inputs:
+    inputs.make-atom.mkAtom {
+      args.atomSrc = ./.;
+
+      system = "x86_64-linux";
+
+      registry = {
+        local = {
+          inherit (inputs)
+            typed-atom
+            nixpkgs
+            pkdjz
+            horizons
+            liGoldragonWebpage
+            ;
+        };
+      };
+    };
 }

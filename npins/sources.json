@@ -7,10 +7,10 @@
         "owner": "criome",
         "repo": "registry"
       },
-      "branch": "main",
-      "revision": "993482377e15a737ea0f3129018c237be180e4fd",
-      "url": "https://github.com/criome/registry/archive/993482377e15a737ea0f3129018c237be180e4fd.tar.gz",
-      "hash": "0knrzvf8c53dmr30nlwk53vbhzhvjcxs1364ajiacvjy5r1jw2iq"
+      "branch": "testing",
+      "revision": "e8f6fd2ff69622310b93b0682b8d41240d662b97",
+      "url": "https://github.com/criome/registry/archive/e8f6fd2ff69622310b93b0682b8d41240d662b97.tar.gz",
+      "hash": "0k8r0acj8mxjrv7jcfc0bjf39a7zxv8xdgpycx4nw7znqw2q9n9g"
     }
   },
   "version": 3

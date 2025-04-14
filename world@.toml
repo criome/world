@@ -10,8 +10,8 @@ features = ["lib"]
 [fetch.typed-atom]
 name = "typed-atom"
 
-[fetch.nixpkgs-atom]
-name = "nixpkgs-atom"
+[fetch.pkgs]
+name = "nixpkgs"
 
 [fetch.pkdjz]
 name = "pkdjz"
