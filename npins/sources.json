@@ -1,0 +1,17 @@
+{
+  "pins": {
+    "registry": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "criome",
+        "repo": "registry"
+      },
+      "branch": "main",
+      "revision": "993482377e15a737ea0f3129018c237be180e4fd",
+      "url": "https://github.com/criome/registry/archive/993482377e15a737ea0f3129018c237be180e4fd.tar.gz",
+      "hash": "0knrzvf8c53dmr30nlwk53vbhzhvjcxs1364ajiacvjy5r1jw2iq"
+    }
+  },
+  "version": 3
+}
