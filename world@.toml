@@ -2,10 +2,10 @@
 id = "world"
 version = "0.1.0"
 system = true
-propagate = true
 
-[std]
-features = ["lib"]
+[fetch.mkAtom]
+name = "make-atom"
+type = "import"
 
 [fetch.typed-atom]
 name = "typed-atom"
@@ -14,14 +14,10 @@ name = "typed-atom"
 name = "nixpkgs"
 
 [fetch.pkdjz]
-name = "pkdjz"
-type = "flake"
 
-[fetch.horizons]
-name = "horizons"
+[fetch.horizons-rs]
 
 [fetch.liGoldragonWebpage]
-name = "liGoldragonWebpage"
 type = "src"
 
 [backend.nix]

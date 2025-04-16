@@ -1,5 +1,5 @@
 let
-  pkdjz = get.pkdjz.packages.${system};
+  pkdjz = get.pkdjz.packages;
 
   websiteSrcs = {
     goldragon = get.liGoldragonWebpage;

@@ -2,9 +2,9 @@
   description = "World";
 
   inputs = {
-    make-atom.url = "github:criome/make-atom";
+    make-atom.url = "github:criome/make-atom/testing";
 
-    atom.url = "github:LiGoldragon/atom/atomicFlake-v1";
+    system.url = "github:criome/system";
 
     typed-atom.url = "github:criome/typed-atom";
     typed-atom.inputs.rust-atom.follows = "rust-atom";
@@ -17,9 +17,6 @@
 
     horizons-rs.url = "github:criome/horizons-rs";
     horizons-rs.flake = false;
-    horizons.url = "github:criome/horizons";
-    horizons.inputs.atom.follows = "atom";
-    horizons.inputs.horizons-rs.follows = "horizons-rs";
 
     liGoldragonWebpage.url = "github:LiGoldragon/webpage";
     liGoldragonWebpage.flake = false;
@@ -30,11 +27,12 @@
     inputs.make-atom.mkAtom {
       args.atomSrc = ./.;
 
-      system = "x86_64-linux";
+      system = inputs.system.value;
 
       registry = {
         local = {
           inherit (inputs)
+            make-atom
             typed-atom
             nixpkgs
             pkdjz
