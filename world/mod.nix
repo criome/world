@@ -16,7 +16,7 @@ let
 
 in
 {
-  Packages.horizons = get.typed-atom.make get.horizons;
+  Packages.horizons = mod.mkRustAtom { src = registry.horizons-rs; };
   Packages.websites = websites;
   Packages.tests = mod.tests;
 }

@@ -3,6 +3,9 @@ id = "world"
 version = "0.1.0"
 system = true
 
+[features]
+default = [ "lib", "pkgs" ]
+
 [fetch.mkAtom]
 name = "make-atom"
 type = "import"
@@ -10,15 +13,16 @@ type = "import"
 [fetch.typed-atom]
 name = "typed-atom"
 
+[fetch.lib]
+name = "lib"
+type = "import"
+subdir = "lib"
+
 [fetch.pkgs]
 name = "nixpkgs"
+type = "pkgs"
 
 [fetch.pkdjz]
-
-[fetch.horizons-rs]
-
-[fetch.liGoldragonWebpage]
-type = "src"
 
 [backend.nix]
 fetcher = "flake-lock"

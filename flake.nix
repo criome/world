@@ -8,8 +8,11 @@
 
     typed-atom.url = "github:criome/typed-atom";
     typed-atom.inputs.rust-atom.follows = "rust-atom";
-    rust-atom.url = "github:criome/rust-atom";
 
+    rust-atom.url = "github:criome/rust-atom/testing";
+    rust-atom.inputs.make-atom.follows = "make-atom";
+
+    lib.url = "github:nix-community/nixpkgs.lib";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     pkdjz.url = "github:criome/pkdjz";
@@ -30,16 +33,15 @@
       system = inputs.system.value;
 
       registry = {
-        local = {
-          inherit (inputs)
-            make-atom
-            typed-atom
-            nixpkgs
-            pkdjz
-            horizons
-            liGoldragonWebpage
-            ;
-        };
+        inherit (inputs)
+          make-atom
+          typed-atom
+          rust-atom
+          nixpkgs
+          pkdjz
+          horizons-rs
+          liGoldragonWebpage
+          ;
       };
     };
 }

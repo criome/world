@@ -33,37 +33,6 @@
     },
     "atom_3": {
       "locked": {
-        "lastModified": 1741525624,
-        "narHash": "sha256-F5HbIUenQo+jOhEF6aw4SVQ3ZSTqTiv3ZDtI6TzK19w=",
-        "owner": "LiGoldragon",
-        "repo": "atom",
-        "rev": "901017135c6e2e069d9eb61ef6bf3ad4ec8f8dbd",
-        "type": "github"
-      },
-      "original": {
-        "owner": "LiGoldragon",
-        "ref": "atomicFlake-v1",
-        "repo": "atom",
-        "type": "github"
-      }
-    },
-    "atom_4": {
-      "locked": {
-        "lastModified": 1740578955,
-        "narHash": "sha256-cfQd23xSpKB7AIVNjoHRcKwR/h4lJY9Syi6Mu/NWX9Y=",
-        "owner": "LiGoldragon",
-        "repo": "atom",
-        "rev": "e9b437bf60607fdfa27e49937561b9e1f8682863",
-        "type": "github"
-      },
-      "original": {
-        "owner": "LiGoldragon",
-        "repo": "atom",
-        "type": "github"
-      }
-    },
-    "atom_5": {
-      "locked": {
         "lastModified": 1740578955,
         "narHash": "sha256-cfQd23xSpKB7AIVNjoHRcKwR/h4lJY9Syi6Mu/NWX9Y=",
         "owner": "LiGoldragon",
@@ -254,13 +223,28 @@
         "type": "github"
       }
     },
+    "lib": {
+      "locked": {
+        "lastModified": 1744511788,
+        "narHash": "sha256-5PVswSsunWhzi6mBwOvuCCUBK+ggcB/idSWCaXvVvr8=",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "rev": "022a1e186f42079dba4f00376697158e068abd79",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "type": "github"
+      }
+    },
     "make-atom": {
       "locked": {
-        "lastModified": 1744747698,
-        "narHash": "sha256-jHHVlT8HMuA+Rre/EQjFiPcj5jiIASBkP8Cb+HkXIMY=",
+        "lastModified": 1744993737,
+        "narHash": "sha256-inchzOIyFmAPxON7whDYJYvOmSdRn2Wij4GZp4yGdn8=",
         "owner": "criome",
         "repo": "make-atom",
-        "rev": "1829f6fc8de3f0a9bdbf8c9806a2c5096ec0ef6a",
+        "rev": "dfee7f5c1e8c389a278a4e1d24dc654ccf9ee5f9",
         "type": "github"
       },
       "original": {
@@ -368,25 +352,19 @@
         "type": "github"
       }
     },
-    "nixpkgs-atom_2": {
-      "inputs": {
-        "atom": "atom_4",
-        "nixpkgs": [
-          "rust-atom",
-          "nixpkgs"
-        ]
-      },
+    "nixpkgs-lib": {
+      "flake": false,
       "locked": {
-        "lastModified": 1741090188,
-        "narHash": "sha256-r7Qp67m2JKpz568acpB/0T87Efue2qClq7+FO5774c0=",
-        "owner": "criome",
-        "repo": "nixpkgs-atom",
-        "rev": "3a317ae9550b659c42ee31363353623958bf2c63",
+        "lastModified": 1744511788,
+        "narHash": "sha256-5PVswSsunWhzi6mBwOvuCCUBK+ggcB/idSWCaXvVvr8=",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "rev": "022a1e186f42079dba4f00376697158e068abd79",
         "type": "github"
       },
       "original": {
-        "owner": "criome",
-        "repo": "nixpkgs-atom",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
         "type": "github"
       }
     },
@@ -469,6 +447,7 @@
       "inputs": {
         "horizons-rs": "horizons-rs",
         "liGoldragonWebpage": "liGoldragonWebpage",
+        "lib": "lib",
         "make-atom": "make-atom",
         "nixpkgs": "nixpkgs",
         "pkdjz": "pkdjz",
@@ -479,23 +458,27 @@
     },
     "rust-atom": {
       "inputs": {
-        "atom": "atom_3",
         "crane": "crane_3",
+        "make-atom": [
+          "make-atom"
+        ],
         "nixpkgs": "nixpkgs_2",
-        "nixpkgs-atom": "nixpkgs-atom_2",
+        "nixpkgs-lib": "nixpkgs-lib",
         "rust-overlay": "rust-overlay_3",
+        "src": "src",
         "system": "system_2"
       },
       "locked": {
-        "lastModified": 1741608041,
-        "narHash": "sha256-DZP4/2q2MLPA6mSoOQv1Li5vLdeBLzczAZndQ5MT36M=",
+        "lastModified": 1744996032,
+        "narHash": "sha256-IDZ2zXmKlYkOmGhP+ToNVsbbGg5HCU85WES4eUSwMOc=",
         "owner": "criome",
         "repo": "rust-atom",
-        "rev": "3de62e794f4b6b2597a3f6ef1050711a9a70d24c",
+        "rev": "b6b4557627c650e5698dd37d5eae5f1084aaa9c3",
         "type": "github"
       },
       "original": {
         "owner": "criome",
+        "ref": "testing",
         "repo": "rust-atom",
         "type": "github"
       }
@@ -587,6 +570,22 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1665100299,
+        "narHash": "sha256-EWcjXI7WbgKxKr1zmzjN+zt412Sq/59TV64uGMYsrRU=",
+        "owner": "superatomic",
+        "repo": "xshe",
+        "rev": "d0b2d6966ccf703f88dd02df989eb49c365320ff",
+        "type": "github"
+      },
+      "original": {
+        "owner": "superatomic",
+        "repo": "xshe",
         "type": "github"
       }
     },
@@ -689,7 +688,7 @@
     },
     "typed-atom": {
       "inputs": {
-        "atom": "atom_5",
+        "atom": "atom_3",
         "rust-atom": [
           "rust-atom"
         ]
