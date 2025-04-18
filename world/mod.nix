@@ -2,21 +2,27 @@ let
   pkdjz = get.pkdjz.packages;
 
   websiteSrcs = {
-    goldragon = get.liGoldragonWebpage;
+    goldragon = registry.liGoldragonWebpage;
   };
 
   mkWebsite =
     name: src:
     let
+      # TODO module-out
       domain = name + ".criome.net";
     in
     pkdjz.mkMarkdownWebsite { inherit src domain; };
 
   websites = std.mapAttrs mkWebsite websiteSrcs;
 
+  horizonsRs = mod.mkRustAtom { src = registry.horizons-rs; };
+  horizonsRsCrates = horizonsRs.crates;
+
 in
 {
-  Packages.horizons = mod.mkRustAtom { src = registry.horizons-rs; };
-  Packages.websites = websites;
-  Packages.tests = mod.tests;
+  Packages = {
+    inherit (horizonsRsCrates) horizons-cli;
+    inherit websites;
+    inherit (mod) tests;
+  };
 }

@@ -16,7 +16,10 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     pkdjz.url = "github:criome/pkdjz";
-    pkdjz.inputs.nixpkgs.follows = "nixpkgs";
+    pkdjz.inputs = {
+      make-atom.follows = "make-atom";
+      nixpkgs.follows = "nixpkgs";
+    };
 
     horizons-rs.url = "github:criome/horizons-rs";
     horizons-rs.flake = false;
